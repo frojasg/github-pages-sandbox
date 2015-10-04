@@ -1,0 +1,9 @@
+task default: %w(build)
+
+task :build do
+  sh "bundle exec jekyll build --destination ./_html"
+end
+
+task :server do
+  sh "bundle exec jekyll serve --baseurl ''"
+end
